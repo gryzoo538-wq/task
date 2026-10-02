@@ -1,0 +1,15 @@
+SKU,Name,Regular price,Status,coa_batch,coa_test_date,coa_purity,coa_size_mg,coa_pdf,coa_url,status_reason
+P01,BPC-157,49.00,publish,PP-2606-004,2026-06-18,99.4,5,MAL-26-6305.pdf,https://example-store.test/coa/p01-pp-2606-004/,all publish conditions met
+P02,TB-500,59.00,publish,PP-2603-011,2026-03-10,99.1,5,MAL-26-3471.pdf,https://example-store.test/coa/p02-pp-2603-011/,all publish conditions met
+P03,GHK-Cu,69.00,draft,,2026-05-22,98.7,50,MAL-26-7468.pdf,,missing field: batch
+P04,Ipamorelin,55.00,publish,PP-2604-021,2026-04-15,99.0,5,MAL-26-1791.pdf,https://example-store.test/coa/p04-pp-2604-021/,all publish conditions met
+P05,CJC-1295 (no DAC),45.00,publish,PP-2607-003,2026-07-02,98.2,2,MAL-26-2186.pdf,https://example-store.test/coa/p05-pp-2607-003/,all publish conditions met
+P06,Epitalon,39.00,publish,PP-2602-008,2026-02-27,99.6,10,MAL-26-9779.pdf,https://example-store.test/coa/p06-pp-2602-008/,all publish conditions met
+P07,Selank,42.00,publish,PP-2601-015,2026-06-20,99.3,5,MAL-26-6991.pdf,https://example-store.test/coa/p07-pp-2601-015/,all publish conditions met
+P08,Semax,44.00,publish,PP-2608-002,2026-08-05,99.2,5,MAL-26-1950.pdf,https://example-store.test/coa/p08-pp-2608-002/,all publish conditions met
+P09,MOTS-c,79.00,draft,PP-2605-006,2026-05-30,97.4,10,MAL-26-9313.pdf,https://example-store.test/coa/p09-pp-2605-006/,purity below 98.0 % (97.4 %)
+P10,Thymosin Alpha-1,89.00,publish,PP-2603-017,2026-03-24,98.6,5,MAL-26-4517.pdf,https://example-store.test/coa/p10-pp-2603-017/,all publish conditions met
+P11,PT-141,52.00,draft,PP-2508-009,2025-08-14,99.0,10,MAL-26-1614.pdf,https://example-store.test/coa/p11-pp-2508-009/,"COA older than 12 months (tested 2025-08-14, reference date 2026-09-30)"
+P12,DSIP,36.00,draft,PP-2604-013,2026-04-09,98.4,5,MAL-26-2408.pdf,https://example-store.test/coa/p12-pp-2604-013/,identity failed: observed 851.3 Da vs theoretical 848.8 Da (diff 2.5 Da > 1.0 Da)
+P13,KPV,34.00,draft,PP-2606-010,2026-06-03,98.8,10,MAL-26-8104.pdf,https://example-store.test/coa/p13-pp-2606-010/,"size conflict: COA declares 10 mg, sheet lists 5 mg; held until price is confirmed"
+P14,AOD-9604,64.00,publish,PP-2607-005,2026-07-21,99.5,5,MAL-26-7851.pdf,https://example-store.test/coa/p14-pp-2607-005/,all publish conditions met
