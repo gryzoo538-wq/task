@@ -1,11 +1,15 @@
-I run WooCommerce builds for clients. This client sells research peptides, and every product must show a verified Certificate of Analysis (COA) before it can go live. I need the full job done: the product data, a small WordPress plugin that displays it, and the client's follow-up changes. Work in the folder that contains products.csv, price_list.csv, rules.md, coa/ (41 COA PDFs from three labs) and inbox/ (three client emails with their attachments).
+I run WooCommerce builds for clients. This client sells research peptides, and every product must show a verified Certificate of Analysis (COA) before it can go live. I need the full job done: the product data, a small WordPress plugin that displays it, and the client's follow-up changes. Work in the folder that contains products.csv, price_list.csv, rules.md, coa/ (41 COA PDFs from three labs), inbox/ (three client emails and two attachments), INPUTS.md and MANIFEST.sha256.
 
 ## Inputs
 - products.csv: the shop's product sheet (30 products). It may contain errors.
 - price_list.csv: the official price list by product and size.
 - coa/*.pdf: lab COAs. Filenames are report IDs, so match each result to its product from the PDF content. 28 of them are scans with no text layer (some rotated, some low resolution). No OCR software is installed, so you must look at each scan yourself. Some PDFs list several lots or products, and the Coastal COAs span two pages. Labs use different names for the same peptide and different date and number formats.
 - rules.md: the store's publishing rules. Follow it exactly. Do not invent values that are not in the PDFs, sheet, price list, rules or emails.
-- inbox/: three emails from the client, dated after the first delivery, plus their attachments. Do not open inbox/ until Part 3.
+- inbox/: three emails from the client (email_01.md to email_03.md), dated after the first delivery, plus their two PDF attachments. Do not open the emails until Part 3.
+- INPUTS.md and MANIFEST.sha256: the list of the 49 input files and their checksums.
+
+## Before you start: confirm the inputs
+Check that you received the complete file set: run `sha256sum -c MANIFEST.sha256` and compare the folder with INPUTS.md. If any file is missing, empty or unreadable, stop and tell me exactly which ones. Do not guess or work around missing client files. Only the checksums and the file list are checked here. The contents of inbox/ are still read only in Part 3.
 
 ## Part 1: First delivery (save everything in output/phase1/)
 1. Before deciding anything, write reading_notes.md: one entry per PDF with the lab, page count, whether it is a scan (orientation, legibility), every result line it contains, the product each line matches and why (name, amount, mass), and anything unusual (stamps, revisions, blank fields, ambiguous dates).
