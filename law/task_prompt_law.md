@@ -1,11 +1,15 @@
-I'm a legal operations consultant. A small law firm, Hartwell & Osei LLP, is moving from Outlook to Box, and I need its exported mailbox filed into the new Box structure following the firm's filing rules. Work in the folder that contains mailbox/ (64 .eml files exported from Outlook), matters.csv, staff.csv, filing_rules.md and memos/.
+I'm a legal operations consultant. A small law firm, Hartwell & Osei LLP, is moving from Outlook to Box, and I need its exported mailbox filed into the new Box structure following the firm's filing rules. Work in the folder that contains mailbox/ (64 .eml files exported from Outlook), matters.csv, staff.csv, filing_rules.md, memos/ (four dated memos), INPUTS.md and MANIFEST.sha256.
 
 ## Inputs
 - mailbox/*.eml: the exported emails. File names are Outlook IDs and tell you nothing. Many emails carry PDF attachments, and 15 of those are image-only scans (one is rotated). No OCR software is installed, so you must look at each scan yourself. Several emails can only be identified from their attachment.
 - matters.csv: every client and matter, with folder names, responsible attorney, status, closed dates, litigation holds, ethical walls and restricted matters.
 - staff.csv: firm staff.
 - filing_rules.md: the firm's filing rules. Follow them exactly.
-- memos/: four memos sent after the first filing pass. Do not open memos/ until Part 3.
+- memos/: four memos sent after the first filing pass. Do not read them until Part 3.
+- INPUTS.md and MANIFEST.sha256: the list of the 71 input files and their checksums.
+
+## Before you start: confirm the inputs
+Check that you received the complete file set: run `sha256sum -c MANIFEST.sha256`, compare the folder with INPUTS.md, and confirm that all 64 emails parse and that their 24 PDF attachments open. If anything is missing, empty or unreadable, stop and tell me exactly what. Do not guess or work around missing client files. Only the checksums and file list are checked here. The memo contents are still read only in Part 3.
 
 ## Part 1: First filing pass (everything in output/phase1/)
 1. Before filing anything, write triage_notes.md: one entry per email with the sender, recipients, date, Message-ID, a one-line summary of the body, what each attachment shows (for scans, what you saw), the category and matter you chose, and why. Note every judgment call: overlapping names, two-matter emails, walls, holds, closed matters, conflicts, duplicates.
