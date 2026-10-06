@@ -4,12 +4,12 @@ The reviewer's finding: the uploaded attachment was a 0-byte file, so the self-t
 
 ## A. Check the archive before using it
 1. Download **LAW_task_inputs_COMPLETE.zip**. It must be about **1.4 MB**. If your device shows 0 KB, download it again.
-2. Open it on your device. You should see: mailbox/ (64 .eml files), matters.csv, staff.csv, filing_rules.md, memos/ (4 files), INPUTS.md and MANIFEST.sha256.
+2. Open it on your device. You should see: mailbox/ (64 .eml files), matters.csv, staff.csv, filing_rules.md, firm_portal/ (3 files), INPUTS.md and MANIFEST.sha256.
 3. Never upload PRIVATE_answer_key_law.md anywhere in the task.
 
 ## B. Fresh self-test with the full inputs
 1. Create a **new, empty** GitHub repo.
-2. Upload the **contents** of the zip to the repo root, keeping the mailbox/ and memos/ folders, plus count_steps.py. Then check on GitHub that mailbox/ shows 64 files and memos/ shows 4.
+2. Upload the **contents** of the zip to the repo root, keeping the mailbox/ and firm_portal/ folders, plus count_steps.py. Then check on GitHub that mailbox/ shows 64 files and firm_portal/ shows 3.
 3. Start a **new** session at claude.ai/code on that repo. Paste the full prompt from task_prompt_law.md and nothing else.
 4. Do not step in until it finishes. If it reports a missing file at the input check, stop: the upload is incomplete. Fix the repo and start a new session.
 
